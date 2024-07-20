@@ -8,7 +8,7 @@ namespace NorthWind.Entities.POCOEntitites
 {
     public class Customer
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
 
         public string Name { get; set; }
     }
