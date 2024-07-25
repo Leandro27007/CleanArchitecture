@@ -3,20 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NorthWind.Repositories.EFCore.DataContext;
 
 #nullable disable
 
-namespace NorthWind.Repositories.EFCore.Migration
+namespace NorthWind.Repositories.EFCore.Migrations
 {
     [DbContext(typeof(NorthWindContext))]
-    [Migration("20240720025612_InitialCreate")]
-    partial class InitialCreate
+    partial class NorthWindContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

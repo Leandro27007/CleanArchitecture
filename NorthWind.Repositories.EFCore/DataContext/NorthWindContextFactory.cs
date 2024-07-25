@@ -17,7 +17,7 @@ namespace NorthWind.Repositories.EFCore.DataContext
             var optionsBuilder =
                 new DbContextOptionsBuilder<NorthWindContext>();
 
-            optionsBuilder.UseSqlServer("Server=(locaDb)\\mssqlloca;database=NorthWindDB");
+            optionsBuilder.UseSqlServer("Server=.;database=NorthWindDB; TrustServerCertificate=True; Integrated Security=true"); 
             return new NorthWindContext(optionsBuilder.Options);
         }
     }
